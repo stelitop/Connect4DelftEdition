@@ -4,76 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/game.css">
     <title>Game</title>
 </head>
-<body background="https://preview.redd.it/0r631in77rty.png?auto=webp&s=90e1fa71693171969c4d48be62adabe9d760a7b4">
+<body>
     <main>
         <section>
-            <table id="table">
-                <tr>
-                    <th class="tile" id="tile00">T1</th>
-                    <th class="tile" id="tile01">T2</th>
-                    <th class="tile" id="tile02">T3</th>
-                    <th class="tile" id="tile03">T4</th>
-                    <th class="tile" id="tile04">T5</th>
-                    <th class="tile" id="tile05">T6</th>
-                    <th class="tile" id="tile06">T7</th>
-                </tr>
-                <tr>
-                    <th class="tile" id="tile10">T1</th>
-                    <th class="tile" id="tile11">T2</th>
-                    <th class="tile" id="tile12">T3</th>
-                    <th class="tile" id="tile13">T4</th>
-                    <th class="tile" id="tile14">T5</th>
-                    <th class="tile" id="tile15">T6</th>
-                    <th class="tile" id="tile16">T7</th>
-                </tr>
-                <tr>
-                    <th class="tile" id="tile20">T1</th>
-                    <th class="tile" id="tile21">T2</th>
-                    <th class="tile" id="tile22">T3</th>
-                    <th class="tile" id="tile23">T4</th>
-                    <th class="tile" id="tile24">T5</th>
-                    <th class="tile" id="tile25">T6</th>
-                    <th class="tile" id="tile26">T7</th>
-                </tr>
-                <tr>
-                    <th class="tile" id="tile30">T1</th>
-                    <th class="tile" id="tile31">T2</th>
-                    <th class="tile" id="tile32">T3</th>
-                    <th class="tile" id="tile33">T4</th>
-                    <th class="tile" id="tile34">T5</th>
-                    <th class="tile" id="tile35">T6</th>
-                    <th class="tile" id="tile36">T7</th>
-                </tr>
-                <tr>
-                    <th class="tile" id="tile40">T1</th>
-                    <th class="tile" id="tile41">T2</th>
-                    <th class="tile" id="tile42">T3</th>
-                    <th class="tile" id="tile43">T4</th>
-                    <th class="tile" id="tile44">T5</th>
-                    <th class="tile" id="tile45">T6</th>
-                    <th class="tile" id="tile46">T7</th>
-                </tr>
-                <tr>
-                    <th class="tile" id="tile50">T1</th>
-                    <th class="tile" id="tile51">T2</th>
-                    <th class="tile" id="tile52">T3</th>
-                    <th class="tile" id="tile53">T4</th>
-                    <th class="tile" id="tile54">T5</th>
-                    <th class="tile" id="tile55">T6</th>
-                    <th class="tile" id="tile56">T7</th>
-                </tr>
-            </table>
+            <div id="gamegrid"> 
+                <div class="tile tile_empty" id="tile00"> </div>
+                <div class="tile tile_empty" id="tile01"> </div>
+                <div class="tile tile_empty" id="tile02"> </div>
+                <div class="tile tile_empty" id="tile03"> </div>
+                <div class="tile tile_empty" id="tile04"> </div>
+                <div class="tile tile_empty" id="tile05"> </div>
+                <div class="tile tile_empty" id="tile06"> </div>
+                <div class="tile tile_empty" id="tile10"> </div>
+                <div class="tile tile_empty" id="tile11"> </div>
+                <div class="tile tile_empty" id="tile12"> </div>
+                <div class="tile tile_empty" id="tile13"> </div>
+                <div class="tile tile_empty" id="tile14"> </div>
+                <div class="tile tile_empty" id="tile15"> </div>
+                <div class="tile tile_empty" id="tile16"> </div>
+                <div class="tile tile_empty" id="tile20"> </div>
+                <div class="tile tile_empty" id="tile21"> </div>
+                <div class="tile tile_empty" id="tile22"> </div>
+                <div class="tile tile_empty" id="tile23"> </div>
+                <div class="tile tile_empty" id="tile24"> </div>
+                <div class="tile tile_empty" id="tile25"> </div>
+                <div class="tile tile_empty" id="tile26"> </div>
+                <div class="tile tile_empty" id="tile30"> </div>
+                <div class="tile tile_empty" id="tile31"> </div>
+                <div class="tile tile_empty" id="tile32"> </div>
+                <div class="tile tile_empty" id="tile33"> </div>
+                <div class="tile tile_empty" id="tile34"> </div>
+                <div class="tile tile_empty" id="tile35"> </div>
+                <div class="tile tile_empty" id="tile36"> </div>
+                <div class="tile tile_empty" id="tile40"> </div>
+                <div class="tile tile_empty" id="tile41"> </div>
+                <div class="tile tile_empty" id="tile42"> </div>
+                <div class="tile tile_empty" id="tile43"> </div>
+                <div class="tile tile_empty" id="tile44"> </div>
+                <div class="tile tile_empty" id="tile45"> </div>
+                <div class="tile tile_empty" id="tile46"> </div>
+                <div class="tile tile_empty" id="tile50"> </div>
+                <div class="tile tile_empty" id="tile51"> </div>
+                <div class="tile tile_empty" id="tile52"> </div>
+                <div class="tile tile_empty" id="tile53"> </div>
+                <div class="tile tile_empty" id="tile54"> </div>
+                <div class="tile tile_empty" id="tile55"> </div>
+                <div class="tile tile_empty" id="tile56"> </div>
+            </div>
+        </section>
+
+        <section id="feedbacksection">
+            <div id="feedback">Waiting for player to join...</div>
+            <div id="rematchbutton">Rematch</div>
         </section>
 
         <section id="playerinfo">
-            <div id="player1wins">Wins: x</div>
-            <div id="player1icon">Player 1</div>
-            <div id="playercurrent"> (arrow) </div>
-            <div id="player2icon">Player 2</div>
-            <div id="player2wins">Wins: y</div>
+            <div class="info" id="playerAwins">Wins: 0</div>
+            <div class="info" id="playerAicon">You</div>
+            <div class="info" id="playerBicon">Opponent</div>
+            <div class="info" id="playerBwins">Wins: 0</div>
         </section>
     </main>
+
+    <script src="javascripts/connection.js"></script>
+    <script src="javascripts/socketmessages.js"></script>
+    <script src="javascripts/interactions.js"></script>
 </body>
 </html>
